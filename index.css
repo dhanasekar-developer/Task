@@ -23,6 +23,30 @@ nav {
     }
 }
 
+@media all and (max-width: 700px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 130px;
+
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0px;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
 nav ul {
     display: flex;
     color: #fff;
@@ -122,6 +146,8 @@ ul :nth-child(1) {
     justify-content: center;
 
 }
+
+
 
 .formHeading {
     color: var(--colors-heading, #1E0E62);
@@ -236,4 +262,49 @@ ul :nth-child(1) {
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+@media all and (max-width: 520px) {
+    .form {
+        width: 330px;
+
+    }
+
+    .input {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .checkboxDiv {
+        padding: 0 25px;
+        margin: 0px;
+    }
+
+    .signinBtn,
+    .twitterBtn {
+        width: 250px;
+        margin: 15px auto;
+
+    }
+
+    .heading,
+    .content {
+        width: 340px;
+        margin: 0px auto;
+    }
+
+    .heading>h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        margin-top: -50px;
+        font-size: 1.3rem;
+    }
 }
